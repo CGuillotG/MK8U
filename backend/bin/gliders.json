@@ -1,0 +1,4 @@
+{"glider":"Glider1","speedGround":-0.25,"speedWater":-0.25,"speedAir":-0.25,"speedAntiGravity":0.25,"acceleration":0.25,"weight":0,"handlingGround":0,"handlingWater":0.25,"handlingAir":0.25,"handlingAntiGravity":-0.25,"traction":-0.25,"miniTurbo":0.25}
+{"glider":"Glider2","speedGround":-0.25,"speedWater":0,"speedAir":-0.25,"speedAntiGravity":0.25,"acceleration":0.25,"weight":-0.25,"handlingGround":0,"handlingWater":0,"handlingAir":0.25,"handlingAntiGravity":0,"traction":0,"miniTurbo":0.25}
+{"glider":"Glider3","speedGround":0,"speedWater":-0.25,"speedAir":0,"speedAntiGravity":0.25,"acceleration":0,"weight":0.25,"handlingGround":0,"handlingWater":0.25,"handlingAir":0,"handlingAntiGravity":-0.25,"traction":-0.25,"miniTurbo":0}
+{"glider":"Glider4","speedGround":0,"speedWater":0,"speedAir":0,"speedAntiGravity":0,"acceleration":0,"weight":0,"handlingGround":0,"handlingWater":0,"handlingAir":0,"handlingAntiGravity":0,"traction":0,"miniTurbo":0}
