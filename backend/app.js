@@ -61,7 +61,15 @@ app.use(passport.session())
 // app.use(express.static(path.join(__dirname, 'public')))
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
-const index = require('./routes/index')
-app.use('/', index)
+const auth = require('./routes/auth')
+// const drivers = require('./routes/drivers')
+// const bodies = require('./routes/bodies')
+// const tires = require('./routes/tires')
+// const gliders = require('./routes/gliders')
+app.use('/auth', auth)
+// app.use('/drivers', drivers)
+// app.use('/bodies', bodies)
+// app.use('/tires', tires)
+// app.use('/gliders', gliders)
 
 module.exports = app
