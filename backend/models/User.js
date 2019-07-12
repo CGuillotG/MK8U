@@ -24,8 +24,7 @@ let userSchema = new Schema(
         },
         profilePic: {
             type: String,
-            default:
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TUuXmx_ZWDtD3i0Dzeow2nQn1GrAjPYbqWUlAI8trL7440G2'
+            default: 'https://res.cloudinary.com/cgui1107/image/upload/v1552070261/Weave/ProfilePics/avatar.png'
         },
         builds: {
             type: [
