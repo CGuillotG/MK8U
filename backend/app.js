@@ -30,6 +30,7 @@ const app = express()
 app.use(
     cors({
         origin: true,
+        // origin: [process.env.PUBLIC_URL],
         credentials: true
     })
 )
@@ -45,9 +46,8 @@ app.use(
     session({
         secret: process.env.SECRET,
         resave: false,
-        // httpOnly: true,
         saveUninitialized: true,
-        cookie: { httpOnly: true, maxAge: 2419200000 },
+        cookie: { httpOnly: true, maxAge: 2419200000 /*30 days*/ },
         store: new MongoStore({
             mongooseConnection: mongoose.connection,
             ttl: 24 * 60 * 60 // 1 day
@@ -58,6 +58,8 @@ app.use(
 //passport config
 app.use(passport.initialize())
 app.use(passport.session())
+// app.use(express.static(path.join(__dirname, 'public')))
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 const index = require('./routes/index')
 app.use('/', index)
