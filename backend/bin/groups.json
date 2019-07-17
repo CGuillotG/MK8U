@@ -1,0 +1,43 @@
+{"name":"Light 1","options":["Baby Peach","Baby Daisy"]}
+{"name":"Light 2","options":["Baby Rosalina","Lemmy Koopa"]}
+{"name":"Light 3","options":["Baby Mario","Baby Luigi","Dry Bones"]}
+{"name":"Light 4","options":["Koopa","Lakitu","Bowser Jr"]}
+{"name":"Light 5","options":["Toadette","Wendy Koopa","Isabelle"]}
+{"name":"Light 6","options":["Toad","Shy Guy","Larry Koopa"]}
+{"name":"Medium 1","options":["Cat Peach","Inkling Girl","Villager Female"]}
+{"name":"Medium 2","options":["Peach","Daisy","Yoshi"]}
+{"name":"Medium 3","options":["Tanooki Mario","Inkling Boy","Villager Male"]}
+{"name":"Medium 4","options":["Luigi","Iggy Koopa"]}
+{"name":"Medium 5","options":["Mario","Ludvig von Koopa"]}
+{"name":"Heavy 1","options":["Rosalina","King Boo","Link"]}
+{"name":"Heavy 2","options":["Waluigi","Donkey Kong","Roy Koopa"]}
+{"name":"Heavy 3","options":["Wario","Dry Bowser"]}
+{"name":"Heavy 4","options":["Metal Mario","Metal Peach"]}
+{"name":"Heavy 5","options":["Bowser","Morton Koopa"]}
+{"name":"Body 1","options":[{"Bike":["Mr. Scooty"]},{"Kart":["Biddybuggy"]}]}
+{"name":"Body 2","options":[{"Bike":["Varmint","City Tripper"]},{"Kart":["Pipe Frame"]}]}
+{"name":"Body 3","options":[{"Kart":["Streetle","Landship"]}]}
+{"name":"Body 4","options":[{"ATV":["Wild Wiggler"]},{"Bike":["Standard Bike","Flame Rider"]},{"Kart":["W 25 Silver Arrow"]}]}
+{"name":"Body 5","options":[{"ATV":["Teddy Buggy"]},{"InDrift Bike":["Comet","Yoshi Bike"]},{"Kart":["Cat Cruiser"]}]}
+{"name":"Body 6","options":[{"Kart":["Tanooki Kart","Koopa Clown"]}]}
+{"name":"Body 7","options":[{"Bike":["The Duke"]},{"Kart":["Standard Kart","300 SL Roadster"]}]}
+{"name":"Body 8","options":[{"ATV":["Inkstriker"]},{"Kart":["Mach 8","Sports Coupe"]}]}
+{"name":"Body 9","options":[{"InDrift Bike":["Master Cycle"]},{"Kart":["Sneeker","Gold Standard"]}]}
+{"name":"Body 10","options":[{"ATV":["Splat Buggy"]},{"Kart":["Blue Falcon"]}]}
+{"name":"Body 11","options":[{"InDrift Bike":["Sport Bike","Jet Bike"]},{"Kart":["Prancer"]}]}
+{"name":"Body 12","options":[{"ATV":["Bone Rattler"]},{"Kart":["Steel Driver","Tri-Speeder"]}]}
+{"name":"Body 13","options":[{"Kart":["Circuit Special","B Dasher","P-Wing"]}]}
+{"name":"Body 14","options":[{"ATV":["Standard ATV"]},{"Kart":["Badwagon","GLA"]}]}
+{"name":"Glider 1","options":["Peach Parasol","Parafoil","Bowser Kite","MKTV Parafoil"]}
+{"name":"Glider 2","options":["Cloud Glider","Parachute","Flower Glider","Paper Glider"]}
+{"name":"Glider 3","options":["Wario Wing","Plane Glider","Gold Glider"]}
+{"name":"Glider 4","options":["Super Glider","Waddle Wing","Hylian Kite"]}
+{"name":"Tires 1","options":["Roller","Azure Roller"]}
+{"name":"Tires 2","options":["Cushion","Sponge"]}
+{"name":"Tires 3","options":["Button","Leaf"]}
+{"name":"Tires 4","options":["Monster","Hot Monster"]}
+{"name":"Tires 5","options":["Standard","Blue Standard","GLA"]}
+{"name":"Tires 6","options":["Slim","Wood","Crimson Slim"]}
+{"name":"Tires 7","options":["Off-Road","Retro Off-Road","Triforce Tires"]}
+{"name":"Tires 8","options":["Slick","Cyber Slick"]}
+{"name":"Tires 9","options":["Metal","Gold Tires"]}
