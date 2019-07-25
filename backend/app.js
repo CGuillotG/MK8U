@@ -65,11 +65,11 @@ const auth = require('./routes/auth')
 const drivers = require('./routes/drivers')
 const bodies = require('./routes/bodies')
 const tires = require('./routes/tires')
-// const gliders = require('./routes/gliders')
+const gliders = require('./routes/gliders')
 app.use('/auth', auth)
 app.use('/drivers', drivers)
 app.use('/bodies', bodies)
 app.use('/tires', tires)
-// app.use('/gliders', gliders)
+app.use('/gliders', gliders)
 
 module.exports = app
