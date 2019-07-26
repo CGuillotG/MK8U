@@ -67,11 +67,13 @@ const bodies = require('./routes/bodies')
 const tires = require('./routes/tires')
 const gliders = require('./routes/gliders')
 const groups = require('./routes/groups')
+const images = require('./routes/images')
 app.use('/auth', auth)
 app.use('/drivers', drivers)
 app.use('/bodies', bodies)
 app.use('/tires', tires)
 app.use('/gliders', gliders)
 app.use('/groups', groups)
+app.use('/images', images)
 
 module.exports = app
