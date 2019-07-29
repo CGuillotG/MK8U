@@ -11,6 +11,10 @@ let imageSchema = new Schema(
         url: {
             type: String,
             required: true
+        },
+        profilePic: {
+            type: Boolean,
+            required: true
         }
     },
     {
