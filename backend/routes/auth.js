@@ -52,6 +52,9 @@ router.get('/logout', isAuth, (req, res, next) => {
 })
 
 //Privates
+router.get('/logged', isAuth, (req, res, next) => {
+    res.status(200).json({ message: 'Access granted: User', user: req.user })
+})
 // router.get('/admin', isAuth, isAdmin, (req, res, next) => {
 //     res.status(200).json({ message: 'Access granted: Admin', user: req.user })
 // })
