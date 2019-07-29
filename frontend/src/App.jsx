@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import Routes from './Routes.jsx'
 import { NavLink } from 'react-router-dom'
 import axios from 'axios'
-const loginUrl = process.env.REACT_APP_ENDPOINT+'/login'
+const loginURL = process.env.REACT_APP_ENDPOINT+'/login'
 const logoutURL = process.env.REACT_APP_ENDPOINT+'/logout'
-const url = process.env.REACT_APP_ENDPOINT+'/private'
+const loggedURL = process.env.REACT_APP_ENDPOINT+'/logged'
 
 class App extends Component {
     state = {
@@ -14,15 +14,9 @@ class App extends Component {
 
     checkLogged = () => {
         axios
-            .get(url, { withCredentials: true })
-            .then(res => {
-                this.setState({ isLogged: true, user: res.data.user })
-                this.render()
-            })
-            .catch(e => {
-                this.setState({ isLogged: false })
-                this.render()
-            })
+        .get(loggedURL, { withCredentials: true })
+        .then(res => this.setState({ isLogged: true, user: res.data.user }))
+        .catch(e => this.setState({ isLogged: false }))
     }
 
     drawNavs = () => {
@@ -30,30 +24,13 @@ class App extends Component {
         if (isLogged) {
             return (
                 <div>
-                    <NavLink activeStyle={{ fontWeight: 'bolder' }} to='/'>
+                    <NavLink activeStyle={{ fontWeight: 'bolder' }} exact to='/'>
                         Home
                     </NavLink>
-
-                    <span> | </span>
-                    <NavLink activeStyle={{ fontWeight: 'bolder' }} to='/beers'>
-                        Beers
-                    </NavLink>
-
-                    <span> | </span>
-                    <NavLink activeStyle={{ fontWeight: 'bolder' }} to='/beers/random'>
-                        Random Beer
-                    </NavLink>
-
-                    <span> | </span>
-                    <NavLink activeStyle={{ fontWeight: 'bolder' }} to='/beers/new'>
-                        Add beer
-                    </NavLink>
-
                     <span> | </span>
                     <NavLink activeStyle={{ fontWeight: 'bolder' }} to='/profile'>
                         Profile
                     </NavLink>
-
                     <span> | </span>
                     <NavLink activeStyle={{ fontWeight: 'bolder' }} to='/logout'>
                         Sign Out
@@ -63,7 +40,7 @@ class App extends Component {
         } else {
             return (
                 <nav>
-                    <NavLink activeStyle={{ fontWeight: 'bolder' }} to='/'>
+                    <NavLink activeStyle={{ fontWeight: 'bolder' }} exact to='/'>
                         Home
                     </NavLink>
                     <span> | </span>
@@ -85,7 +62,7 @@ class App extends Component {
 
     logIn = auth => {
         axios
-            .post(loginUrl, auth, { withCredentials: true })
+            .post(loginURL, auth, { withCredentials: true })
             .then(res => {
                 this.setState({ isLogged: true, user: res.data })
                 console.log('Login Data')
@@ -101,9 +78,7 @@ class App extends Component {
     logOut = () => {
         axios
             .get(logoutURL, { withCredentials: true })
-            .then(res => {
-                this.setState({ isLogged: false })
-            })
+            .then(res => this.setState({ isLogged: false }))
             .catch(e => console.log(e))
     }
 
