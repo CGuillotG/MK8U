@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-let url = 'http://localhost:3000/private'
+let url = process.env.REACT_APP_ENDPOINT+'/private'
 
 export default class Profile extends React.Component {
     state = { user: {} }

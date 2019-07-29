@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import Routes from './Routes.jsx'
 import { NavLink } from 'react-router-dom'
 import axios from 'axios'
-let loginUrl = 'http://localhost:3000/login'
-let logoutURL = 'http://localhost:3000/logout'
-const url = 'http://localhost:3000/private'
+const loginUrl = process.env.REACT_APP_ENDPOINT+'/login'
+const logoutURL = process.env.REACT_APP_ENDPOINT+'/logout'
+const url = process.env.REACT_APP_ENDPOINT+'/private'
 
 class App extends Component {
     state = {

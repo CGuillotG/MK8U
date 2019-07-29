@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-let url = 'http://localhost:3000/signup'
+let url = process.env.REACT_APP_ENDPOINT+'/signup'
 
 class Signup extends React.Component {
     state = {
