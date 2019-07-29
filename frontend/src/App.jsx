@@ -113,7 +113,7 @@ class App extends Component {
         return (
             <div>
                 {this.drawNavs()}
-                <h1>Sup?</h1>
+                <h1>MK8U Character Selection</h1>
                 <Routes isLogged={isLogged} logIn={this.logIn} logOut={this.logOut} user={user} />
             </div>
         )
