@@ -11,6 +11,12 @@ let WithRouter = () => (
     </BrowserRouter>
 )
 
+//Console message
+// console.info(
+//     '%cWrite a console message here, check this website: https://website',
+//     'font-weight:bold; color:navy; font-size: 2rem'
+// )
+
 ReactDOM.render(<WithRouter />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
